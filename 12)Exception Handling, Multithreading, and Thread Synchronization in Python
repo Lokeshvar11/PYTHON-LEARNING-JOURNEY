@@ -1,0 +1,203 @@
+print("case1")
+a = 5
+b = 2
+print(a/b)
+ 
+print("BYE")
+
+#IF YOU GIVE B=0 YOU WILL GET ZERODIVISON ERROR
+
+print("case2")
+a = 5
+b = 0
+try :
+    print(a/b)
+except Exception:
+    print("hey you cannot divide number by zero")
+    
+ 
+print("BYE")
+
+print("case3")
+
+a = 5
+b = 2
+try :
+    print(a/b)
+except Exception:
+    print("hey you cannot divide number by zero")
+    
+ 
+print("BYE")
+
+print("case4")
+
+a = 5
+b = 0
+try :
+    print(a/b)
+except Exception as e:
+    print("hey you cannot divide number by zero", "=>",e)
+    
+ 
+print("BYE")
+print("case5")
+
+a = 5
+b = 3
+try :
+    print("open")
+    print(a/b)
+    print("close")
+except Exception as e:
+    print("hey you cannot divide number by zero", "=>",e)
+    
+ 
+print("BYE")
+print("case6")
+
+a = 5
+b = 0
+try :
+    print("open")
+    print(a/b)
+    print("close")
+except Exception as e:
+    print("hey you cannot divide number by zero", "=>",e)
+    
+print("case7")  
+
+a = 5
+b = 0
+try :
+    print("open")
+    print(a/b)
+    
+except Exception as e:
+    print("hey you cannot divide number by zero", "=>",e)
+
+finally:
+
+    print("close")
+    
+print("case8")
+
+
+a = 5
+b = 2
+try :
+    print("open")
+    print(a/b)
+    k = int(input("enter a number"))#any number
+    print(k)
+        
+except Exception as e:
+    print("hey you cannot divide number by zero", "=>",e)
+finally:
+    print("closed")
+
+a = 5
+b = 2
+try :
+    print("open")
+    print(a/b)
+    k = int(input("enter a number"))#give p
+    print(k)
+        
+except ValueError as e:# incase of enter number = p
+    print("Invalid input")
+except Exception as e:# these two lines are used for unknown error 
+    print("something went wrong")
+finally:
+    print("closed")
+
+
+print("MULTITHREADING")
+
+class Hello:
+    def run(self):
+        for i in range(5):
+            print("hello")
+            
+
+class Hii:
+    def run(self):
+        for i in range(5):
+            print("hii")
+
+t1 = Hello()
+t2 = Hii()
+
+t1.run()
+t2.run()
+
+from threading import*
+
+class Hello(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hello")
+            
+
+class Hii(Thread):
+    def run(self):
+        for i in range(5):
+            print("Hii")
+
+t1 = Hello()
+t2 = Hii()
+
+t1.start()
+t2.start()
+
+print("break")
+
+from time import sleep
+from threading import*
+
+class Hello(Thread):
+    def run(self):
+        for i in range(10):
+            print("Hello")
+            sleep(1)
+            
+
+class Hii(Thread):
+    def run(self):
+        for i in range(10):
+            print("Hii")
+            sleep(1)
+            
+t1 = Hello()
+t2 = Hii()
+
+t1.start()
+t2.start()
+print("__________inorderrrr")
+
+
+from time import sleep
+from threading import*
+
+class Hello(Thread):
+    def run(self):
+        for i in range(10):
+            print("Hello")
+            sleep(1)
+            
+
+class Hii(Thread):
+    def run(self):
+        for i in range(10):
+            print("Hii")
+            sleep(1)
+            
+t1 = Hello()
+t2 = Hii()
+
+t1.start()
+sleep(0.2)
+t2.start()
+
+print ("order")
+
