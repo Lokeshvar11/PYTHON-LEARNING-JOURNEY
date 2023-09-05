@@ -1,0 +1,56 @@
+class MyVirtualWorld:
+    def process(self):
+        print("Processing")   #this is a dummy line 
+    def login(self):
+        print("checking")       #login method
+        
+#this class represent my world
+#need to write something
+#still not found any related data
+#final line
+
+
+#This is treated as documentation
+#not a good way to write multiline comment...
+
+
+def search(list, n):
+    i = 0
+
+    while i< len(list):
+        if list[i] == n:
+            return True
+        i = i+1
+        
+    return False
+
+list = [5,6,7,8,9]
+n=9
+
+if search(list,n):
+    print("Found at")
+else:
+    print("not found")
+
+        
+
+def search(list, n):
+    i = 0
+
+    while i< len(list):
+        if list[i] == n:
+            globals()['pos'] = i
+            return True
+        i = i+1
+        
+    return False
+
+list = [5,6,7,8,9]
+n=9
+
+if search(list,n):
+    print("Found at", pos+1)
+else:
+    print("not found")
+
+        
