@@ -1,0 +1,43 @@
+'navin' #string
+'navin'
+print('navin') #functions
+navin
+print('navin's laptop')
+      
+SyntaxError: unterminated string literal (detected at line 1)
+print("navin's laptop")
+      
+navin's laptop
+ navin's laptop
+      
+SyntaxError: unexpected indent
+print (
+    navin\'s "laptop"')
+    
+SyntaxError: unexpected character after line continuation character
+print(navin\'s "laptop")
+    
+SyntaxError: unexpected character after line continuation character
+print('navin\'s "laptop")
+      
+SyntaxError: incomplete input
+print('navin\'s "laptop"')
+      
+navin's "laptop"
+navin *2
+      
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    navin *2
+NameError: name 'navin' is not defined
+'navin *3
+      
+SyntaxError: incomplete input
+10*'navin'
+      
+'navinnavinnavinnavinnavinnavinnavinnavinnavinnavin'
+print('c:\docs\navin')
+      
+c:\docs
+avin
+print(r'c:\docs\navib')
