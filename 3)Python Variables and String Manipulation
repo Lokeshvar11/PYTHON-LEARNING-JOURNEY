@@ -1,0 +1,97 @@
+2+3
+      
+5
+x=2
+      
+x+3
+      
+5
+y=3
+      
+x+y
+      
+5
+x=9
+      
+x+y
+      
+12
+'abc'
+      
+'abc'
+x+10
+      
+19
+19+y
+      
+22
+_+3
+      
+25
+6
+      
+6
+name = 'youtube'
+      
+name
+      
+'youtube'
+name + 'rocks'
+      
+'youtuberocks'
+name +
+      
+SyntaxError: incomplete input
+ name + ' rocks'
+      
+SyntaxError: unexpected indent
+name + ' rocks'
+      
+'youtube rocks'
+name[0]
+      
+'y'
+name[6]
+      
+'e'
+name[8]
+      
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    name[8]
+IndexError: string index out of range
+name[-1]
+      
+'e'
+name[-3]
+      
+'u'
+name [0:2]
+      
+'yo'
+name[1:4]
+      
+'out'
+name [1: ]
+      
+'outube'
+name [ : 3]
+      
+'you'
+name [3:10]
+      
+'tube'
+name[0:3] = "my"
+      
+Traceback (most recent call last):
+  File "<pyshell#60>", line 1, in <module>
+    name[0:3] = "my"
+TypeError: 'str' object does not support item assignment
+"my" + name[4: ]
+      
+'myube'
+myname = 'ramesh'
+      
+len(myname)
+      
+6
