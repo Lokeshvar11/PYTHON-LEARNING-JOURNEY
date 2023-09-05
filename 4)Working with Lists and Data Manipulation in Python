@@ -1,0 +1,201 @@
+      
+num = [24,44,55,44,33,65]
+      
+num
+      
+[24, 44, 55, 44, 33, 65]
+nums [0]
+      
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    nums [0]
+NameError: name 'nums' is not defined. Did you mean: 'num'?
+num[0]
+      
+24
+num[5]
+      
+65
+nums[3 :6]
+      
+Traceback (most recent call last):
+  File "<pyshell#70>", line 1, in <module>
+    nums[3 :6]
+NameError: name 'nums' is not defined. Did you mean: 'num'?
+nums[ 3:6]
+      
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    nums[ 3:6]
+NameError: name 'nums' is not defined. Did you mean: 'num'?
+num[ 3:6]
+      
+[44, 33, 65]
+num[-5]
+      
+44
+name =['a','b','c']
+      
+name
+      
+['a', 'b', 'c']
+values = [8.7,'r',23]
+      
+values
+      
+[8.7, 'r', 23]
+collection =[num, name]
+      
+collection
+      
+[[24, 44, 55, 44, 33, 65], ['a', 'b', 'c']]
+nums.append(45)
+      
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    nums.append(45)
+NameError: name 'nums' is not defined. Did you mean: 'num'?
+num.append(45)
+      
+collection
+      
+[[24, 44, 55, 44, 33, 65, 45], ['a', 'b', 'c']]
+num.insert(2,56)
+      
+collection
+      
+[[24, 44, 56, 55, 44, 33, 65, 45], ['a', 'b', 'c']]
+num.remove(55)
+      
+collection
+      
+[[24, 44, 56, 44, 33, 65, 45], ['a', 'b', 'c']]
+nums.pop(1)
+      
+Traceback (most recent call last):
+  File "<pyshell#87>", line 1, in <module>
+    nums.pop(1)
+NameError: name 'nums' is not defined. Did you mean: 'num'?
+num.pop(1)
+      
+44
+num.pop()
+      
+45
+del.num[2:]
+      
+SyntaxError: invalid syntax
+del num[2:]
+      
+collection
+      
+[[24, 56], ['a', 'b', 'c']]
+num.extend([45,55,44])
+      
+collection
+      
+[[24, 56, 45, 55, 44], ['a', 'b', 'c']]
+[33,44,55,66,77]
+      
+[33, 44, 55, 66, 77]
+del num[2:]
+      
+collection
+      
+[[24, 56], ['a', 'b', 'c']]
+collection = ['num']
+      
+collection
+      
+['num']
+####restarting lists here
+      
+
+nums =[25,12,36,95,14]
+      
+nums
+      
+[25, 12, 36, 95, 14]
+nums[2:]
+      
+[36, 95, 14]
+nums[-1]
+      
+14
+nums[-5]
+      
+25
+names = ['a','b','c']
+      
+names
+      
+['a', 'b', 'c']
+values =[8.8,'k',24]
+      
+q = [nums, names]
+      
+q
+      
+[[25, 12, 36, 95, 14], ['a', 'b', 'c']]
+nums.append[45]
+      
+Traceback (most recent call last):
+  File "<pyshell#112>", line 1, in <module>
+    nums.append[45]
+TypeError: 'builtin_function_or_method' object is not subscriptable
+nums.append(45)
+      
+q
+      
+[[25, 12, 36, 95, 14, 45], ['a', 'b', 'c']]
+nums.insert(3,34)
+      
+q
+      
+[[25, 12, 36, 34, 95, 14, 45], ['a', 'b', 'c']]
+nums.remove(4)
+      
+Traceback (most recent call last):
+  File "<pyshell#117>", line 1, in <module>
+    nums.remove(4)
+ValueError: list.remove(x): x not in list
+nums.remove(34)
+      
+q
+      
+[[25, 12, 36, 95, 14, 45], ['a', 'b', 'c']]
+nums.pop(3)
+      
+95
+nums
+      
+[25, 12, 36, 14, 45]
+nums.pop()
+      
+45
+del nums[2:]
+      
+nums
+      
+[25, 12]
+nums.extend([45,44,33,22])
+      
+nums
+      
+[25, 12, 45, 44, 33, 22]
+#inbuilt function
+      
+min(nums)
+      
+12
+max(nums)
+      
+45
+sum(nums)
+      
+181
+nums.sort()
+      
+nums
+      
+[12, 22, 25, 33, 44, 45]
