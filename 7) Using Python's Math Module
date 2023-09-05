@@ -1,0 +1,27 @@
+
+import math
+x = math.sqrt(25)
+x
+5.0
+x = math.sqrt(15)
+x
+3.872983346207417
+>>> print(math.floor(2.9))
+2
+>>> print(math.floor(2.1))
+2
+>>> print(math.ceil(2.9))
+3
+>>> print(math.ceil(2.1))
+3
+>>> print(math.pow(3,7))
+2187.0
+>>> print(math.pi)
+3.141592653589793
+>>> print(math.e)
+2.718281828459045
+>>> #a.sqrt(25)
+>>> import math as a
+>>> a.sqrt(25)
+5.0
+>>> 
