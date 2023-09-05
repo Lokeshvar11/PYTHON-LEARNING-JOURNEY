@@ -1,0 +1,70 @@
+#case1
+print("#a # # #")
+
+
+print("#b ")
+print("# ")
+print("# ")
+print("# ")
+
+#case2
+for j in range(4):
+    print("#c ",end="")
+
+for j in range(4):
+    print("#c ",end="")
+
+#case3
+for j in range(4):
+    print("#d ",end="")
+    
+print()
+
+
+#case 4
+for i in range(5):
+    for j in range(5):
+        print("#e ",end="")
+
+    print()
+
+print("ANOTHER PATTERN")  
+
+for i in range(4):
+    for j in range(i):
+        print("# ",end="")
+
+    print()
+# 0 1 2 3
+
+for i in range(4):
+    for j in range(i+1):
+        print("# ", end="")
+    print()
+#1 2 3 4
+for i in range(4):
+    for j in range(4-i):
+        print("# ",end="")
+
+    print()
+
+print("LETS DISCUSS ABOUT OOPS,YEAH 'OOPS'")
+
+
+x = 9
+print(type(x))
+
+a = '8'
+print(type(a))
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1tb")
+        
+com1 = Computer()
+print(type(com1))
+
+
+
+
