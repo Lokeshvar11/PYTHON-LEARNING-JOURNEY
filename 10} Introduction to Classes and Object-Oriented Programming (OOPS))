@@ -1,0 +1,781 @@
+class Computer: #Defining class = attributes/behavioiur(methods/functiosa)
+
+    def config(self): #config method
+        print("i5, 16gb, 1tb") #printing config of the machine
+
+com1 = Computer() #object 
+
+Computer.config(com1) #calling object
+#written lot of methods inside the class
+#clas config #mention the required object
+
+print("taking two objects")
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1tb")
+com1 = Computer()
+com2 = Computer()
+Computer.config(com1)
+Computer.config(com2)
+
+print("another way of printing")
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1tb")
+com1 = Computer()
+com2 = Computer()
+Computer.config(com1)
+Computer.config(com2)
+
+com1.config()
+com2.config()
+print("init method")
+#init method - calls automatically
+#config method - calls manually
+
+class Computer:
+    def __init__(self):
+        print("in init")
+
+    def config(self):
+        print("i5, 16gb, 1tb")
+com1 = Computer()
+com2 = Computer()
+
+com1.config()
+com2.config()
+
+#PRINT RAM AND CPU
+
+
+class Computer:
+    def __init__(self,cpu,ram):
+        self.cpu = cpu
+        self.ram = ram
+        
+    def config(self):
+        print("Config is ", self.cpu,self.ram)
+com1 = Computer('i5',16) #self is used as like giving input since they both are objects
+com2 = Computer('Ryzen e',8)
+
+com1.config()
+com2.config()
+
+
+print("CONSTRUCTOR SELF ")
+
+class Computer:
+    pass
+
+
+
+c1 = Computer()
+print(id(c1))
+c2 = Computer()
+print(id(c2))
+
+
+class Computer:
+
+    def __init__(self):
+        self.name = "abcd"
+        self.age = 28
+
+c1 = Computer()
+c2 = Computer()
+
+c1.name = "bcda"
+c1.age = 78
+
+
+print(c1.name)
+print(c2.name)
+
+#updating age  way 1
+
+
+class Computer:
+
+    def __init__(self):
+        self.name = "abcd"
+        self.age = 28
+    def update(self):
+        self.age = 77
+
+c1 = Computer()
+c2 = Computer()
+
+c1.name = "bcda"
+c1.age = 78
+
+
+print(c1.name)
+print(c2.name)
+
+#updating  way 2
+
+
+class Computer:
+
+    def __init__(self):
+        self.name = "abcd"
+        self.age = 28
+
+    def update(self):
+        self.age = 77
+
+
+c1 = Computer()
+c2 = Computer()
+
+c1.name = "bcda"
+c1.age = 78
+
+c1.update()
+
+print(c1.name)
+print(c2.name)
+print(c1.age)
+print(c2.age)
+
+class Computer:
+
+    def __init__(self):
+        self.name = "abcd"
+        self.age = 28
+
+    def update(self):
+        self.age = 77
+
+    def compare(self,other):
+        if self.age == other.age:
+            return True
+        else:
+            return False
+        
+c1 = Computer()
+c1.age = 100
+c2 = Computer()
+
+if c1.compare(c2):
+    print("same")
+else:
+    print("different")
+
+
+print(c1.name)
+print(c2.name)
+print(c1.age)
+print(c2.age)
+
+
+#compare =>  (who is calling,whom to compare) 
+
+
+print ("instance variable class(static variable")
+#Inside init - instance variable
+#outisde init - class variable(inside class)
+
+
+class Car:
+
+    def __init__(self):
+        self.mil = 90
+        self.com = "bmw"
+c1 = Car()
+c2 = Car()
+
+print(c1.com, c1.mil)
+print(c2.com, c2.mil)
+
+class Car:
+
+    def __init__(self):
+        self.mil = 90
+        self.com = "bmw"
+c1 = Car()
+c2 = Car()
+
+c1.mil = 97
+
+print(c1.com, c1.mil)
+print(c2.com, c2.mil)
+
+class Car:
+    wheels = 4
+
+    def __init__(self):
+        self.mil = 90
+        self.com = "bmw"
+c1 = Car()
+c2 = Car()
+
+c1.mil = 97 
+print(c1.com, c1.mil, c1.wheels)
+print(c2.com, c2.mil, c2.wheels)
+
+
+class Car:
+    wheels = 4
+
+    def __init__(self):
+        self.mil = 90
+        self.com = "bmw"
+c1 = Car()
+c2 = Car()
+
+c1.mil = 97
+Car.wheels = 5 
+print(c1.com, c1.mil, c1.wheels)
+print(c2.com, c2.mil, c2.wheels)
+
+
+print("TYPES OF METHODS")
+#instance class static (3 methods)
+
+class Student:
+
+    def __init__(self,m1,m2,m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def avg(self):
+        return(self.m1 + self.m2 +self.m3)/3
+            
+s1 = Student(45,44,54)
+s2 = Student(23,32,34)
+
+print(s1.avg())
+print(s2.avg())
+#self is there so insatnce method
+#INSTANCE HAVE TWO TYPES
+#accessor methods (gettings)
+#mutator methods  (settings)
+
+#if u want to get value of cartain ----
+class Student:
+
+    def __init__(self,m1,m2,m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def avg(self):
+        return(self.m1 + self.m2 +self.m3)/3
+            
+s1 = Student(45,44,54)
+s2 = Student(23,32,34)
+print(s1.m1)
+#you will get the value
+print(s1.avg())
+print(s2.avg())
+
+
+print("WHAT IF you want to get output via methods without variables")
+
+
+class Student:
+
+    def __init__(self,m1,m2,m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def avg(self):
+        return(self.m1 + self.m2 +self.m3)/3
+            
+
+    def get_m1(self): #get is not necessary but to print conditionally u may use it u say m1 alone
+        return self.m1
+
+    def set_m1(self,value):
+        self.m1 = value
+s1 = Student(45,44,54)
+s2 = Student(23,32,34)
+
+print(s1.avg())
+print(s2.avg())
+print("s1",s1.get_m1())
+print("s2",s2.get_m1())
+
+
+class Student:
+
+    school = "Telusko"
+
+    def __init__(self,m1,m2,m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def avg(self):
+        return(self.m1 + self.m2 +self.m3)/3
+    @classmethod  #decorator
+    def info (cls):
+         return cls.school
+        
+s1 = Student(45,44,54)
+s2 = Student(23,32,34)
+
+
+print(Student.info())
+
+#static method
+
+class Student:
+
+    school = "Telusko"
+
+    def __init__(self,m1,m2,m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def avg(self):
+        return(self.m1 + self.m2 +self.m3)/3
+    @classmethod  #decorator
+    def getSchool(cls):
+         return cls.school
+
+    @staticmethod
+
+    def info():
+        print("this is student class in the abc module")
+        
+s1 = Student(45,44,54)
+s2 = Student(23,32,34)
+
+
+print(Student.info())
+
+
+print("INNER CLASS IN PYTHON")
+
+class Student:
+
+    def __init__(self,name,rollno):
+        self.name = name
+        self.rollno = rollno
+
+s1   = Student("navin",3)
+s2 = Student("reddy",7)
+
+print(s1.name,s1.rollno)
+
+print("alternator method")
+
+
+class Student:
+ 
+    def __init__(self,name,rollno):
+        self.name = name
+        self.rollno = rollno
+        self.lap = self.Laptop()
+
+    def show(self):
+        print(self.name,self.rollno)
+
+    class Laptop:
+        def __init__(self):
+            self.brand = "hp"
+            self.cpu   = "i5"
+            self.ram   = 8
+
+s1 = Student("navin",3)
+s2 = Student("reddy",7)
+
+s1.show()
+
+lap1 = s1.lap
+lap2 = s2.lap
+
+print(id(lap1))
+print(id(lap2))
+print("Laptop Brand:", s1.lap.brand)
+
+
+print("INHERITANCE")
+#single level inheritance
+
+class A:
+    def feature1(self):
+        print("feature 1 working")
+        
+    def feature2(self):
+        print("feature 2 working")
+
+class B:
+    def feature3(self):
+        print("feature 3 working")
+        
+    def feature4(self):
+        print("feature 4 working")
+
+a1 = A()
+
+a1.feature1()
+a1.feature2()
+
+
+b1 =B()
+
+
+#multi level inheritance
+
+class A:
+    def feature1(self):
+        print("feature 1 working")
+        
+    def feature2(self):
+        print("feature 2 working")
+
+class B(A) :
+    def feature3(self):
+        print("feature 3 working")
+        
+    def feature4(self):
+        print("feature 4 working")
+class C(B):
+    def feature5(self):
+        print("feature 5 working")
+
+a1 =A()
+
+a1.feature1()
+a1.feature2()
+
+b1 = B()
+
+
+b1.feature1()
+b1.feature2()
+b1.feature3()
+b1.feature4()
+
+c1 = C()
+
+c1.feature1()
+c1.feature2()
+c1.feature3()
+c1.feature4()
+c1.feature5()
+
+#Multi level inheritance
+
+class A:
+    def feature1(self):
+        print("feature 1 working")
+        
+    def feature2(self):
+        print("feature 2 working")
+
+class B:
+    def feature3(self):
+        print("feature 3 working")
+        
+    def feature4(self):
+        print("feature 4 working")
+class C(A,B):
+    def feature5(self):
+        print("feature 5 working")
+
+
+a1 =A()
+
+a1.feature1()
+a1.feature2()
+
+b1 = B()
+
+
+b1.feature3()
+b1.feature4()
+
+c1 = C()
+
+c1.feature1()
+c1.feature2()
+c1.feature3()
+c1.feature4()
+c1.feature5()
+
+print("CONSTRUCTOR IN INHERITANCE PYTHON", "OR METHOD RESOLUTION ORDER")
+
+
+class A:
+
+    def __init__(self):
+        print("in A Init")
+        
+    def feature1(self):
+        print("feature 1 working")
+        
+    def feature2(self):
+        print("feature 2 working")
+
+class B(A) :
+
+    def feature3(self):
+        print("feature 3 working")
+        
+    def feature4(self):
+        print("feature 4 working")
+
+a1 = A()
+a1 = B()
+
+
+#ALITER WITH TWO INIT
+
+class A:
+
+    def __init__(self):
+        print("in A Init")
+        
+    def feature1(self):
+        print("feature 1 working")
+        
+    def feature2(self):
+        print("feature 2 working")
+
+class B(A) :
+
+    def __init__(self):
+        print("in B Init")
+    def feature3(self):
+        print("feature 3 working")
+        
+    def feature4(self):
+        print("feature 4 working")
+
+a1 = A()
+a1 = B()
+
+#CALL ALL FEATURES USING SUPER (REFERS TO SUPER CLASS)
+#super used to call other features(here)
+
+class A:
+
+    def __init__(self):
+        print("in A Init")
+        
+    def feature1(self):
+        print("feature 1  working")
+        
+    def feature2(self):
+        print("feature 2  working")
+
+class B:
+
+    def __init__(self):
+        super(). __init__()#attends a then come here to talks b with him
+        print("in B Init")
+          
+    def feature3(self):
+        print("feature 3 working")
+        
+    def feature4(self):
+        print("feature 4 working")
+
+a1 = C()
+
+class C(A,B):
+    def __init__(self):
+        super(). __init__()
+        print("in C init")
+
+
+a1= C()
+
+print("feature 1a and feature 1b in two different classes and call them via     a1.feature()one will be printed i.e.  feature 1 a")
+
+
+class A:
+
+    def __init__(self):
+        print("in A Init")
+        
+    def feature1(self):
+        print("feature 1  working")
+        
+    def feature2(self):
+        print("feature 2  working")
+
+class B:
+
+    def __init__(self):
+        super(). __init__()#attends a then come here to talks b with him
+        print("in B Init")
+          
+    def feature3(self):
+        print("feature 3 working")
+        
+    def feature4(self):
+        print("feature 4 working")
+
+a1 = C()
+
+class C(A,B):
+    def __init__(self):
+        super(). __init__()
+        print("in C init")
+    def feat(self):
+        super().feature2()
+
+
+a1= C()
+a1.feat()
+#cosntructor(init),super method,MRO,getting output via super()
+
+
+print("POLYMORPHISM")
+print("duck typing operator overloading method overloading method overriding")
+print("DUCK TYPING")
+
+x = 5
+x = "navin"
+print ('x')
+
+
+
+class MyEditor : #u can put as my editor also
+
+
+    def execute(self):
+    
+        print("Spell check")
+        print("convention check")
+        print("compiling")
+        print("running")
+
+class Laptop:
+
+    def code(self,ide):
+        ide.execute()
+
+ide = MyEditor()
+
+lap1 = Laptop()
+lap1.code(ide)
+
+
+#operator overloading in python
+   
+a = 5
+b = 6
+
+print(a+b)
+
+a = 5
+b = 6
+
+print(a+b)
+
+print(int.__add__(a,b))
+
+a = '5'
+b = '6'
+
+print(str.__add__(a,b))
+
+#__add__, __sub__, __mul__
+
+
+class Student:
+    def __init__(self,m1,m2):
+        self.m1 = m1
+        self.m2 = m2
+        
+    def __add__(self,other):  #student._add__(s1,s2)
+        s1 = self.m1 +other.m1
+        s2 = self.m2 +other.m2
+        s3 = Student(s1,s2)
+
+        return s3
+    
+    def __gt__(self,other):#greater than
+        s1 = self.m1 + self.m2
+        s2 = other.m1 + other.m2
+        
+        if s1 > s2:
+            return True
+        else:
+            return False
+        
+    def __str__(self):
+        return'{} {} '.format(self.m1,self.m2)#4:50:00
+    
+s1 = Student(58,69)
+s2 = Student(69,65)
+
+s3 = s1+s2
+
+if s1 > s2:
+    print("s1 wins")
+else:
+    print("s2 wins")
+
+a = 9
+print(a.__str__())
+
+print(s1)
+
+print ("mol & mor in python")
+
+
+
+class Student:
+    def __init__(self,m1,m2):
+        self.m1 = m1
+        self.m2 = m2
+        
+    def sum(self, a=None, b=None, c=None):# it is not mandatory to give noneit okay to leave it as abc
+
+        s = 0
+
+        if a!=None and b!=None and c!=None:
+            s = a+b+c
+        elif a!= None and b!= None:
+            s = a+b
+        else:
+            s= a
+
+        s = a+b+c
+
+        return s
+
+s1 = Student(58,69)
+
+print(s1.sum(5,9,6)) #4:55:00
+
+#overriding
+
+class A:
+    def show(self):
+          print("in A Show")
+class B(A):
+    pass
+
+a1 = B()
+a1.show()
+
+    
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
